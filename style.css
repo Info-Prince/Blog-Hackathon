@@ -1,0 +1,65 @@
+/* Base Rule */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    margin:  0 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+li,
+a,
+label,
+button {
+  font-family: "Urbanist", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* base rule end here */
+
+
+/* website theme start here */
+
+/* website theme end here */
+
+
+/* Layout start Here */
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+/* Layout End Here */
+
+
+
+/* resuable CSS start here */
+/* resuable CSS end here */
