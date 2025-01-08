@@ -33,3 +33,24 @@ toggleBtn.addEventListener('click', (event) => {
 })
 
 
+// add event listener on the fliter blogs button of form : it's just declaration i'll add functionality later.
+document.getElementById('filter-btn').addEventListener('click', (event) => {
+    event.preventDefault();
+    console.log(event.target);
+})
+
+
+// add event to close popup
+const popClose = document.getElementById('closePopup');
+popClose.addEventListener ('click', (e) => {
+    e.preventDefault();
+    document.getElementById('popUpActive').style.display = 'none';
+    console.log('close');
+    
+})
+// show popUp while clicking on filter Interest
+const userInterest = document.getElementById('interest');
+userInterest.addEventListener('click', (e) => {
+    document.getElementById('popUpActive').style.display = 'block';
+    console.log('shown');
+})

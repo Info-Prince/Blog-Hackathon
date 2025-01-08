@@ -38,7 +38,7 @@
 
 
     <!-- pop up section start -->
-    <section class="popUp-wrapper">
+    <section class="popUp-wrapper" id="popUpActive">
 
         <div class="overlay" id="overlay"></div>
         
@@ -69,7 +69,7 @@
                 </li>
             </ul>
             
-            <button class="filter-btn">Filter Blogs</button>
+            <button id="filter-btn">Filter Blogs</button>
         </form>
     </section>
     <!-- pop up section end -->
@@ -89,6 +89,7 @@
                     <li><i class="icon">📋</i><a href="#manage-blogs">Manage Blogs</a></li>
                     <li><i class="icon">📝</i><a href="#notes">Notes</a></li>
                     <li><i class="icon">🔖</i><a href="#tags">Tags</a></li>
+                    <li id="interest"><i class="icon">🔍</i><a >Filter Interest</a></li>
                 </ul>
                 <div class="recent-search flex">
                     <h2 class="search-data">Recent Search</h2>

@@ -157,7 +157,7 @@ li {
     background-color: #343a40;
     width: fit-content;
     padding: 2rem 1rem 2rem 0;
-    height: 92vh;
+    min-height: 92vh;
     position: relative;
 
     & #toggle-btn {
@@ -260,6 +260,7 @@ li {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
 }
 
 .popUp-wrapper .filter-popup {
@@ -347,7 +348,7 @@ li {
         }
     }
 
-    & .filter-btn {
+    & #filter-btn {
         padding: 0.6rem 1.5rem;
         border: none;
         border-radius: 0.6rem;
