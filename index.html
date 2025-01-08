@@ -34,7 +34,7 @@
 
     <!-- sidebar menu start here -->
     <section id="sidebar-wrapper" class="flex">
-        <div id="sidebar" class="flex container">
+        <div id="sidebar" class="flex container sidebar-active">
             <ul id="tab-list">
                 <li><i class="icon">🏠</i><a href="#home">Home</a></li>
                 <li><i class="icon">✍️</i><a href="#create-blog">Create Blog</a></li>
@@ -45,7 +45,7 @@
             <div class="recent-search flex">
                 <h2 class="search-data">Recent Search</h2>
                 <ul class="search-result">
-                    <li>
+                    <!-- <li>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
                     </li>
                     <li>
@@ -62,14 +62,16 @@
                     </li>
                     <li>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
         
-        <button id="toggle-btn"><img src="./Images/menuIcon.svg" alt=""></button>
+        <button id="toggle-btn" class="toggle-active"><img src="./Images/menuIcon.svg" alt="" id="toggle-active-img"></button>
     </section>
 
     <!-- sidebar menu end here -->
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -157,6 +157,8 @@ li {
     background-color: #343a40;
     width: fit-content;
     padding: 2rem 1rem 2rem 0;
+    height: 92vh;
+    position: relative;
 
     & #toggle-btn {
         align-self: center;
@@ -166,9 +168,10 @@ li {
         padding: 5px 10px;
         cursor: pointer;
         border-radius: 5px;
+        margin-left: 1rem;
 
         & img {
-            rotate: -90deg;
+            rotate: 90deg;
         }
     }
 }
