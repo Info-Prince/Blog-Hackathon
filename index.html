@@ -12,6 +12,8 @@
 
 </head>
 <body>
+
+    <!-- header section start -->
     <header class="header">
         <div class="container flex">
 
@@ -31,45 +33,80 @@
         
         </div>
     </header>
+    <!-- header section end -->
+
+
+
+    <!-- pop up section start -->
+    <section class="popUp-wrapper">
+
+        <div class="overlay" id="overlay"></div>
+        
+        <div class="filter-popup" id="filterPopup">
+            <button class="close-btn" id="closePopup">×</button>
+            <h2>Choose Your Interest</h2>
+            <ul>
+                <li>Traveling</li>
+                <li>Lifestyle</li>
+                <li>Technology</li>
+                <li>Health</li>
+                <li>Education</li>
+            </ul>
+            <button class="filter-btn">Filter Blogs</button>
+        </div>
+    </section>
+    <!-- pop up section end -->
+
+
+
 
     <!-- sidebar menu start here -->
-    <section id="sidebar-wrapper" class="flex">
-        <div id="sidebar" class="flex container sidebar-active">
-            <ul id="tab-list">
-                <li><i class="icon">🏠</i><a href="#home">Home</a></li>
-                <li><i class="icon">✍️</i><a href="#create-blog">Create Blog</a></li>
-                <li><i class="icon">📋</i><a href="#manage-blogs">Manage Blogs</a></li>
-                <li><i class="icon">📝</i><a href="#notes">Notes</a></li>
-                <li><i class="icon">🔖</i><a href="#tags">Tags</a></li>
-            </ul>
-            <div class="recent-search flex">
-                <h2 class="search-data">Recent Search</h2>
-                <ul class="search-result">
-                    <!-- <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
-                    </li>
-                    <li>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-        
-        <button id="toggle-btn" class="toggle-active"><img src="./Images/menuIcon.svg" alt="" id="toggle-active-img"></button>
-    </section>
 
+    <article class="article-wrapper flex">
+
+        <section id="sidebar-wrapper" class="flex">
+            <div id="sidebar" class="flex container sidebar-active">
+                <ul id="tab-list">
+                    <li><i class="icon">🏠</i><a href="#home">Home</a></li>
+                    <li><i class="icon">✍️</i><a href="#create-blog">Create Blog</a></li>
+                    <li><i class="icon">📋</i><a href="#manage-blogs">Manage Blogs</a></li>
+                    <li><i class="icon">📝</i><a href="#notes">Notes</a></li>
+                    <li><i class="icon">🔖</i><a href="#tags">Tags</a></li>
+                </ul>
+                <div class="recent-search flex">
+                    <h2 class="search-data">Recent Search</h2>
+                    <ul class="search-result">
+                        <!-- <li>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                        </li>
+                        <li>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            
+            <button id="toggle-btn" class="toggle-active"><img src="./Images/menuIcon.svg" alt="" id="toggle-active-img"></button>
+        </section>
+        
+        <section id="right-sidebar-wrapper" class="container">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolore neque optio sed dolorem, ipsam aliquid libero sequi quas possimus molestias, enim deserunt atque quos provident voluptatum? Sint similique omnis dicta quidem animi nam dolore nostrum dolorum! Obcaecati tenetur velit vel blanditiis odit, tempore necessitatibus ducimus, in nulla at deleniti cupiditate nam esse. Quae voluptas sapiente itaque quasi quis, officiis nulla voluptates voluptate dolorum magnam eos unde quam. Eaque nulla libero ad in. Iure, dolores ratione necessitatibus deleniti explicabo eius sit laborum! Incidunt, animi et eligendi eveniet ducimus sit fugiat eius illum sapiente laborum error deserunt autem voluptate magnam inventore.</p>
+        </section>
+
+    </article>
+    
     <!-- sidebar menu end here -->
 
     <script src="script.js"></script>
