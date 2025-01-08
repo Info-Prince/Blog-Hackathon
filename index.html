@@ -42,18 +42,35 @@
 
         <div class="overlay" id="overlay"></div>
         
-        <div class="filter-popup" id="filterPopup">
+        <form class="filter-popup" id="filterPopup">
             <button class="close-btn" id="closePopup">×</button>
             <h2>Choose Your Interest</h2>
+            
             <ul>
-                <li>Traveling</li>
-                <li>Lifestyle</li>
-                <li>Technology</li>
-                <li>Health</li>
-                <li>Education</li>
+                <li>
+                    <input type="checkbox" name="interests[]" id="traveling" value="Traveling">
+                    <label for="traveling">Traveling</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="interests[]" id="lifestyle" value="Lifestyle">
+                    <label for="lifestyle">Lifestyle</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="interests[]" id="technology" value="Technology">
+                    <label for="technology">Technology</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="interests[]" id="health" value="Health">
+                    <label for="health">Health</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="interests[]" id="education" value="Education">
+                    <label for="education">Education</label>
+                </li>
             </ul>
+            
             <button class="filter-btn">Filter Blogs</button>
-        </div>
+        </form>
     </section>
     <!-- pop up section end -->
 
