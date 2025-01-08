@@ -1,3 +1,5 @@
+// JavaScript code for sidebar scrolling
+
 const toggleBtn = document.getElementById('toggle-btn');
 toggleBtn.addEventListener('click', (event) => {
     
