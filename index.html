@@ -15,7 +15,7 @@
     <header class="header">
         <div class="container flex">
 
-            <div class="logo">Blog Creators</div>
+            <h1 class="logo">Blog Creators</h1>
             <div class="search-container">
                 <input type="text" placeholder="Search blogs..." id="search-bar">
                 <button type="button" class="search-btn">Search</button>
@@ -31,5 +31,45 @@
         
         </div>
     </header>
+
+    <!-- sidebar menu start here -->
+    <section id="sidebar-wrapper" class="flex">
+        <div id="sidebar" class="flex container">
+            <ul id="tab-list">
+                <li><i class="icon">🏠</i><a href="#home">Home</a></li>
+                <li><i class="icon">✍️</i><a href="#create-blog">Create Blog</a></li>
+                <li><i class="icon">📋</i><a href="#manage-blogs">Manage Blogs</a></li>
+                <li><i class="icon">📝</i><a href="#notes">Notes</a></li>
+                <li><i class="icon">🔖</i><a href="#tags">Tags</a></li>
+            </ul>
+            <div class="recent-search flex">
+                <h2 class="search-data">Recent Search</h2>
+                <ul class="search-result">
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                    </li>
+                    <li>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, numquam?</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <button id="toggle-btn"><img src="./Images/menuIcon.svg" alt=""></button>
+    </section>
+
+    <!-- sidebar menu end here -->
 </body>
 </html>
