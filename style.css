@@ -440,7 +440,7 @@ li {
                 & .publish-date {
 
                 } 
-                & .likeCount {
+                & .reachStats {
                     display: flex;
                     gap: 1.5rem;
                 }
