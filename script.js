@@ -333,77 +333,85 @@ userInterest.addEventListener('click', (e) => {
 // Creating dynamic blog preview card.
 function createBlogPostElement () {
     
-
-  //creating blog post card element
-    const blogPreviewCard = document.createElement('div');
-    blogPreviewCard.setAttribute('id', 'blog-preview-card');
-    blogPreviewCard.setAttribute('class', 'grid grid-two--cols');
-    
-    // blog content wrapper and it's content
-    const blogContentWrapper = document.createElement('div');
-    blogContentWrapper.setAttribute('class', 'blog-content-wrapper flex');
-    
-    const authorProfile = document.createElement('div');
-    authorProfile.setAttribute('id', 'author-profile');
-    authorProfile.setAttribute('class', 'flex');
-    const authorImg = document.createElement('img');
-    authorImg.setAttribute('id', 'author-image');
-    const authorName = document.createElement('p');
-    authorName.setAttribute('id', 'authorName');
-
-    const blogHeading = document.createElement('p');
-    blogHeading.setAttribute('id', 'blog-heading');
-
-    const blogSubHeading = document.createElement('p');
-    blogSubHeading.setAttribute('id', 'sub-heading');
-
-    // blog footer and it's content
-    const blogFooter = document.createElement('div');
-    blogFooter.setAttribute('id', 'blog-footer');
-    blogFooter.setAttribute('class', 'flex');
-    //blog footer content
-    const publishDate = document.createElement('p');
-    publishDate.setAttribute('class', 'publish-date');
-    const reachStats = document.createElement('div');
-    reachStats.setAttribute('class', 'reachStats flex');
-    const likes = document.createElement('span');
-    const comment = document.createElement('span');
-    const readTime = document.createElement('span');
-
-
-    // blog image 
-    const blogImgWrapper = document.createElement('figure');
-    const blogImg = document.createElement('img');
-    blogImg.setAttribute('id', 'blog-image');
-
-
-
-  // Layout of blog preview card making
-    const parentDivElem = document.getElementById('preview-card-wrapper');
-    parentDivElem.appendChild(blogPreviewCard);
-
-    blogPreviewCard.appendChild(blogContentWrapper);
-    blogContentWrapper.appendChild(authorProfile);
-    authorProfile.appendChild(authorImg);
-    authorProfile.appendChild(authorName);
-    blogContentWrapper.appendChild(blogHeading);
-    blogContentWrapper.appendChild(blogSubHeading);
-    blogContentWrapper.appendChild(blogFooter);
-    blogFooter.appendChild(publishDate);
-    blogFooter.appendChild(reachStats);
-    reachStats.appendChild(likes);
-    reachStats.appendChild(comment);
-    reachStats.appendChild(readTime);
-
-    blogPreviewCard.appendChild(blogImgWrapper);
-    blogImgWrapper.appendChild(blogImg);
-
-    // parentDivElem.appendChild(blogPreviewCard);
-
-  // Now add all data into the blog preview card.
     blogPosts.forEach((previewObj) => {
+
+      //creating blog post card element
+        const blogPreviewCard = document.createElement('div');
+        blogPreviewCard.setAttribute('id', 'blog-preview-card');
+        blogPreviewCard.setAttribute('class', 'grid grid-two--cols');
+        
+        // blog content wrapper and it's content
+        const blogContentWrapper = document.createElement('div');
+        blogContentWrapper.setAttribute('class', 'blog-content-wrapper flex');
+        
+        const authorProfile = document.createElement('div');
+        authorProfile.setAttribute('id', 'author-profile');
+        authorProfile.setAttribute('class', 'flex');
+        const authorImg = document.createElement('img');
+        authorImg.setAttribute('id', 'author-image');
+        const authorName = document.createElement('p');
+        authorName.setAttribute('id', 'authorName');
+
+        const blogHeading = document.createElement('p');
+        blogHeading.setAttribute('id', 'blog-heading');
+
+        const blogSubHeading = document.createElement('p');
+        blogSubHeading.setAttribute('id', 'sub-heading');
+
+        // blog footer and it's content
+        const blogFooter = document.createElement('div');
+        blogFooter.setAttribute('id', 'blog-footer');
+        blogFooter.setAttribute('class', 'flex');
+        //blog footer content
+        const publishDate = document.createElement('p');
+        publishDate.setAttribute('class', 'publish-date');
+        const reachStats = document.createElement('div');
+        reachStats.setAttribute('class', 'reachStats flex');
+        const likes = document.createElement('span');
+        const comment = document.createElement('span');
+        const readTime = document.createElement('span');
+
+
+        // blog image 
+        const blogImgWrapper = document.createElement('figure');
+        const blogImg = document.createElement('img');
+        blogImg.setAttribute('id', 'blog-image');
+
+
+
+      // Layout of blog preview card making
+        const parentDivElem = document.getElementById('preview-card-wrapper');
+        parentDivElem.appendChild(blogPreviewCard);
+
+        blogPreviewCard.appendChild(blogContentWrapper);
+        blogContentWrapper.appendChild(authorProfile);
+        authorProfile.appendChild(authorImg);
+        authorProfile.appendChild(authorName);
+        blogContentWrapper.appendChild(blogHeading);
+        blogContentWrapper.appendChild(blogSubHeading);
+        blogContentWrapper.appendChild(blogFooter);
+        blogFooter.appendChild(publishDate);
+        blogFooter.appendChild(reachStats);
+        reachStats.appendChild(likes);
+        reachStats.appendChild(comment);
+        reachStats.appendChild(readTime);
+
+        blogPreviewCard.appendChild(blogImgWrapper);
+        blogImgWrapper.appendChild(blogImg);
+
+        // parentDivElem.appendChild(blogPreviewCard);
+
+      // Now add all data into the blog preview card.
+    
         authorImg.src = "./Images/2.png";
         authorName.innerHTML = previewObj['authorName'];
+        blogHeading.innerHTML = previewObj['title'];
+        blogSubHeading.innerHTML = previewObj['description'];
+        publishDate.innerHTML = previewObj['publishDate'];
+        likes.innerHTML = previewObj['likeCount'];
+        comment.innerHTML = previewObj['commentCount'];
+        readTime.innerHTML = previewObj['readingTime'];
+        blogImg.src = "./Images/2.png";
              
     })
 
