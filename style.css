@@ -378,36 +378,72 @@ li {
 
 /* right sidebar style  */
 .article-wrapper #right-sidebar-wrapper {
-    padding-top: 2rem;
+    padding-top: 4rem;
     display: flex;
     align-items: start;
     justify-content: center;
 
     & #blog-preview-card {
         grid-template-columns: 1fr 0.4fr;
-        max-width: 60%;
+        max-width: 75%;
         place-items: center;
-        padding: 2rem;
-        background-color: #ebebeb;
+        padding: 2rem 3rem 1rem;
+        /* background-color: #ebebeb; */
+        background-color: white;
         border-radius: 1rem;
         gap: 1rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
         & .blog-content-wrapper {
             flex-direction: column;
-            & #author-profile {
+            justify-self: start;
 
+            & #author-profile {
+                align-items: center;
+                gap: 1rem;
                 & #author-image {
-                    width: 5rem;
+                    width: 2rem;
                     aspect-ratio: 1;
-                    height: 6rem;
+                    height: 2rem;
                     border-radius: 50%;
                     background-color: yellow;
+                }
+                & #authorName {
+                    font-size: 1.2rem;
+                    color: #707070;
+                }
+            }
+
+            & #blog-heading {
+                font-size: 3rem;
+                font-weight: 800;
+                margin-bottom: 1rem;
+            }
+
+            & #sub-heading {
+                color: #333333;
+                font-weight: 600;
+            }
+
+            & #blog-footer {
+                margin-top: 3rem;
+                color: #333333;
+                gap: 3rem;
+                text-transform: capitalize;
+
+                & .publish-date {
+
+                } 
+                & .likeCount {
+                    display: flex;
+                    gap: 1.5rem;
                 }
             }
         }
 
         & figure {
             width: 100%;
+            justify-self: end;
 
             & img {
                 width: 100%;
