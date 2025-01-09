@@ -408,9 +408,9 @@ function createBlogPostElement () {
         blogHeading.innerHTML = previewObj['title'];
         blogSubHeading.innerHTML = previewObj['description'];
         publishDate.innerHTML = previewObj['publishDate'];
-        likes.innerHTML = previewObj['likeCount'];
-        comment.innerHTML = previewObj['commentCount'];
-        readTime.innerHTML = previewObj['readingTime'];
+        likes.innerHTML = `❤️${previewObj['likeCount']}`;
+        comment.innerHTML = `💬${previewObj['commentCount']}`;
+        readTime.innerHTML = `⏳${previewObj['readingTime']}`;
         blogImg.src = "./Images/2.png";
              
     })
