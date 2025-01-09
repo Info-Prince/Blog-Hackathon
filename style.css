@@ -377,7 +377,7 @@ li {
 
 
 /* right sidebar style  */
-.article-wrapper #right-sidebar-wrapper .preview-card-wrapper {
+.article-wrapper #right-sidebar-wrapper #preview-card-wrapper {
     flex-direction: column;
     align-items: center;
     gap: 2.5rem;

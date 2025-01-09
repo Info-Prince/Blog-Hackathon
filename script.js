@@ -331,8 +331,10 @@ userInterest.addEventListener('click', (e) => {
 
 
 // Creating dynamic blog preview card.
-function createBlogPost () {
+function createBlogPostElement () {
     
+
+  //creating blog post card element
     const blogPreviewCard = document.createElement('div');
     blogPreviewCard.setAttribute('id', 'blog-preview-card');
     blogPreviewCard.setAttribute('class', 'grid grid-two--cols');
@@ -365,7 +367,7 @@ function createBlogPost () {
     const reachStats = document.createElement('div');
     reachStats.setAttribute('class', 'reachStats flex');
     const likes = document.createElement('span');
-    const share = document.createElement('span');
+    const comment = document.createElement('span');
     const readTime = document.createElement('span');
 
 
@@ -373,7 +375,40 @@ function createBlogPost () {
     const blogImgWrapper = document.createElement('figure');
     const blogImg = document.createElement('img');
     blogImg.setAttribute('id', 'blog-image');
+
+
+
+  // Layout of blog preview card making
+    const parentDivElem = document.getElementById('preview-card-wrapper');
+    parentDivElem.appendChild(blogPreviewCard);
+
+    blogPreviewCard.appendChild(blogContentWrapper);
+    blogContentWrapper.appendChild(authorProfile);
+    authorProfile.appendChild(authorImg);
+    authorProfile.appendChild(authorName);
+    blogContentWrapper.appendChild(blogHeading);
+    blogContentWrapper.appendChild(blogSubHeading);
+    blogContentWrapper.appendChild(blogFooter);
+    blogFooter.appendChild(publishDate);
+    blogFooter.appendChild(reachStats);
+    reachStats.appendChild(likes);
+    reachStats.appendChild(comment);
+    reachStats.appendChild(readTime);
+
+    blogPreviewCard.appendChild(blogImgWrapper);
+    blogImgWrapper.appendChild(blogImg);
+
+    // parentDivElem.appendChild(blogPreviewCard);
+
+  // Now add all data into the blog preview card.
+    blogPosts.forEach((previewObj) => {
+        authorImg.src = "./Images/2.png";
+        authorName.innerHTML = previewObj['authorName'];
+             
+    })
+
     
 
-
 }
+
+createBlogPostElement();
