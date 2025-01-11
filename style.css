@@ -67,6 +67,15 @@ li {
 
 
 /* resuable CSS start here */
+.toolbar-btn {
+    background-color: white;
+    padding: 0.3rem 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: fit-content;
+    height: 3rem;
+}
 /* resuable CSS end here */
 
 
@@ -279,18 +288,21 @@ li {
 
 /* left sidebar style */
 .article-wrapper {
-    position: relative
+    position: relative;
+    background-color: #343a40;
+    gap: 1rem;
 }
 .article-wrapper #sidebar-wrapper {
     align-items: center;
     gap: 1rem;
-    background-color: #343a40;
+    background-color: #49535c;
     width: fit-content;
     padding: 2rem 1rem 2rem 0;
     min-height: 100vh;
     max-height: 100vh;
     position: sticky;
-    top: 0;
+    top: 2rem;
+    margin-top: 0.5rem;
 
     & #toggle-btn {
         align-self: center;
@@ -459,10 +471,37 @@ li {
 }
 /* right sidebar style end */
 
-
 /* sidebar style end here */
 
 
 
+/* Create blog tab style start : style for text editor */
+.createBlog {
+    background-color: #49535c;
+    height: 100vh;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 2rem;
 
+    & #toolbar-wrapper {
+        height: fit-content;
+        width: 100%;
+        background-color: #d4dee2;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        align-items: center;
+        gap: 3rem;
+
+        & #toolbar-buttons {
+            gap: 1rem;
+            
+            & #redo, #undo{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+/* Create blog tab style end : style for text editor */
 
