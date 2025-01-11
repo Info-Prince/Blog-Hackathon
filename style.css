@@ -74,7 +74,7 @@ li {
     border-radius: 5px;
     cursor: pointer;
     width: fit-content;
-    height: 3rem;
+    height: 3.5rem;
 }
 /* resuable CSS end here */
 
@@ -482,15 +482,19 @@ li {
     width: 100%;
     margin-top: 0.5rem;
     padding: 2rem;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
 
     & #toolbar-wrapper {
         height: fit-content;
         width: 100%;
-        background-color: #d4dee2;
+        background-color: #ebebeb;
         padding: 1.5rem;
         border-radius: 0.5rem;
         align-items: center;
         gap: 3rem;
+        margin-bottom: 4rem;
 
         & #toolbar-buttons {
             gap: 1rem;
@@ -499,6 +503,86 @@ li {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+            }
+        }
+        
+        & .align-blogText {
+            gap: 1rem;
+            
+            & .toolbar-btn img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    & #blog-titleSection {
+        align-items: start;
+        width: 100%;
+        background-color: #ebebeb;
+        border-radius: 5px;
+
+        & input{
+            width: 100%;
+            font-size: 2.5rem;
+            padding: 2rem 1.5rem;
+            outline: none;
+            background-color: #ebebeb;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+    }
+
+    & #blog-contentSection {
+        width: 100%;
+        min-height: 30rem;
+        background-color: #ebebeb;
+        border-radius: 5px;
+        margin-top: 1rem;
+
+        & #textLine {
+            background-color: white;
+            width: 100%;
+            align-items: start;
+            /* height: 4rem; */
+            border-radius: inherit;
+            
+            & button {
+                border: none;
+                outline: none;
+                width: fit-content;
+                height: 100%;
+                font-size: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 0.5rem;
+                background: #c6c6c6;
+                cursor: pointer;
+                border-top-left-radius: inherit;
+            }
+
+            & #blogTextContent {
+                width: 100%;
+                height: 100%;
+                border-radius: inherit;
+                min-height: 4.5rem;
+                border: none;
+                outline: none;
+                
+                & input {
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    padding: 1rem 1.5rem;
+                    font-size: 1.7rem;
+                    font-weight: 300;
+                    border: none;
+                    border-radius: inherit;
+                    
+                }
             }
         }
     }

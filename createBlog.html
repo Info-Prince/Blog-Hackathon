@@ -83,24 +83,70 @@
         
 
         <!-- Blog Creation Editor layout start here -->
-        <section id="right-sidebar-wrapper" class="createBlog">
+        <section class="createBlog flex">
+            
             <div id="toolbar-wrapper" class="flex">
                 <div id="toolbar-buttons" class="flex">
                     <button class="toolbar-btn" id="bold"><b>B</b></button>
                     <button class="toolbar-btn" id="italic"><i>I</i></button>
                     <button class="toolbar-btn" id="underline"><u>U</u></button>
+                    <select name="fontSize" id="font" class="toolbar-btn">
+                        <option value="10">10</option>
+                        <option value="10">12</option>
+                        <option value="10">14</option>
+                        <option value="10">16</option>
+                        <option value="10">18</option>
+                        <option value="10">20</option>
+                        <option value="10">22</option>
+                        <option value="10">24</option>
+                        <option value="10">26</option>
+                        <option value="10">28</option>
+                        <option value="10">30</option>
+                        <option value="10">32</option>
+                        <option value="10">34</option>
+                        <option value="10">36</option>
+                        <option value="10">38</option>
+                        <option value="10">40</option>
+                        <option value="10">42</option>
+                        <option value="10">44</option>
+                        <option value="10">46</option>
+                        <option value="10">48</option>
+                        <option value="10">50</option>
+                    </select>
                     <button class="toolbar-btn" id="undo"><img src="./Images/icons8-undo-24.png" alt=""></button>
                     <button class="toolbar-btn" id="redo"><img src="./Images/icons8-redo-24.png" alt=""></button>
                 </div>
-                <div class="align-blogText">
+                <div class="align-blogText flex">
                     <select class="toolbar-btn">
                         <option value="left">Align Left</option>
                         <option value="center">Center</option>
                         <option value="right">Align Right</option>
                         <option value="justify">Justify</option>
-                      </select>
+                    </select>
+                    <select class="toolbar-btn" id="font-family">
+                        <option value="Arial">Arial</option>
+                        <option value="Times New Roman">Times New Roman</option>
+                        <option value="Courier New">Courier New</option>
+                        <option value="Verdana">Verdana</option>
+                    </select>
+                    <button class="toolbar-btn" id="undo"><img src="./Images/icons8-list-30.png" alt=""></button>
+
+                   
                 </div>
             </div>
+
+            <div id="blog-titleSection" class="flex">
+                <input type="text" name="title" id="titleInput" placeholder="Enter Title Here...">
+            </div>
+
+            <div id="blog-contentSection">
+                <div class="flex" id="textLine">
+                    <button id="plusIcon">+</button>
+                    <!-- <p id="blogTextContent"><input type="text"></p> -->
+                    <textarea id="blogTextContent"></textarea>
+                </div>
+            </div>
+
         </section>
         <!-- Blog Creation Editor layout end here -->
 
